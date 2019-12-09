@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'As a visior when i visit the root' do
+describe 'As a visior when i visit the root', :vcr do
   it 'can select a house and display memebers that are orderofpheonix with info' do
     visit root_path
     click_button 'Search For Members'
