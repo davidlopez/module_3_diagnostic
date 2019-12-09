@@ -1,5 +1,5 @@
-<% house_facade.members.each do |member| %>
-  <section class="house-member">
+<% house_facade.members.each_with_index do |member, index| %>
+  <section class="house-member" id="<%= index %>">
     <p class="name"><%= member.name %></p>
 
     <% if member.role %>
