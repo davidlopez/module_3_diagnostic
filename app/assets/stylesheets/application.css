@@ -121,3 +121,15 @@
   width: 50%;
   padding: 5px;
 }
+
+.house-member a {
+  color: white;
+  background: teal;
+  text-decoration: none;
+}
+
+.house-member a:hover {
+  color: white;
+  background: red;
+  text-decoration: none;
+}
