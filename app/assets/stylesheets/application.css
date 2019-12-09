@@ -112,3 +112,12 @@
 .select-field option {
 	font-weight:normal;
 }
+
+.house-member {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 3px solid black;
+  width: 50%;
+  padding: 5px;
+}

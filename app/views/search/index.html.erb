@@ -1,15 +1,17 @@
 <% house_facade.members.each_with_index do |member, index| %>
-  <section class="house-member" id="<%= index %>">
-    <p class="name"><%= member.name %></p>
+  <center>
+    <section class="house-member" id="<%= index %>">
+      <h1 class="name"><%= link_to member.name, "https://www.google.com/search?q=#{member.name}" %></h1>
 
-    <% if member.role %>
-      <p class="role"><%= member.role %></p>
-    <% end %>
+      <% if member.role %>
+        <p class="role">Role: <%= member.role %></p>
+      <% end %>
 
-    <p class="house"><%= member.house %></p>
+      <p class="house">House: <%= member.house %></p>
 
-    <% if member.patronus %>
-      <p class="patronus"><%= member.patronus %></p>
-    <% end %>
-  </section>
+      <% if member.patronus %>
+        <p class="patronus">Patronus: <%= member.patronus %></p>
+      <% end %>
+    </section><br>
+  </center>
 <% end %>
