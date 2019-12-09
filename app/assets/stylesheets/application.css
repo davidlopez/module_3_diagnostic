@@ -123,9 +123,15 @@
 }
 
 .house-member a {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
   color: white;
+  border-radius: 25px;
   background: teal;
+  width: 40%;
   text-decoration: none;
+  padding: 5px;
 }
 
 .house-member a:hover {
