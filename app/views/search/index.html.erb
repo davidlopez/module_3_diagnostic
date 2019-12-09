@@ -1,0 +1,15 @@
+<% house_facade.members.each do |member| %>
+  <section class="house-member">
+    <p class="name"><%= member.name %></p>
+
+    <% if member.role %>
+      <p class="role"><%= member.role %></p>
+    <% end %>
+
+    <p class="house"><%= member.house %></p>
+
+    <% if member.patronus %>
+      <p class="patronus"><%= member.patronus %></p>
+    <% end %>
+  </section>
+<% end %>
